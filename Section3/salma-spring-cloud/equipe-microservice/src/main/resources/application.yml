@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: equipe
+  datasource:
+    url: 'jdbc:h2:mem:eqdb'
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
