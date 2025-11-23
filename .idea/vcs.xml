@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Section6/salma-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Section7/salma-spring-cloud/config-repo" vcs="Git" />
   </component>
 </project>
