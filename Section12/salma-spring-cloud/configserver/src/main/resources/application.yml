@@ -1,0 +1,29 @@
+spring:
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+  application:
+    name: configserver
+  profiles:
+    active: git
+    #active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MarzSalma/config-repo
+          default-label: main
+          clone-on-start: true
+        #native:
+          #search-locations: file:///C:/Users/salma/OneDrive/Bureau/DSI33/nadhem/Docker+microservices/salma-spring-cloud/config-repo
+          #search-locations: classpath:/config
+
+server:
+  port: 9999
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
